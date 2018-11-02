@@ -28,7 +28,7 @@
                                     <segue destination="xGd-DB-BJC" kind="show" id="qXH-Kh-eFm"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9tF-BP-ZSO">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9tF-BP-ZSO" customClass="DrawingView" customModule="DrawingProject" customModuleProvider="target">
                                 <rect key="frame" x="67" y="63" width="240" height="398"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41955119371414185" green="0.69839388132095337" blue="0.91061311960220337" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
