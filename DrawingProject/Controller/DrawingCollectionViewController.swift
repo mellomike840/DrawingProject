@@ -12,6 +12,39 @@ private let reuseIdentifier = "artIdentifier"
 
 public class DrawingCollectionViewController: UICollectionViewController
 {
+    //MARK: Data members for Creativity Screen
+    
+    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    private let itemsPerRowCompact : CGFloat = 4
+    private let itemsPerRowNormal : CGFloat = 6
+    
+    private let creativeCS : [UIImage?] =
+    {
+        return [
+            UIImage(named: "Bug Juice"),
+            UIImage(named: "Shrek"),
+            UIImage(named: "Jimi"),
+            UIImage(named: "Jerry"),
+            UIImage(named: "AlexRottlaenderSwiftHaiku"),
+            UIImage(named: "AlexRottlaenderMainframeHaiku"),
+            UIImage(named: "AlexRottlaenderJavaHaiku"),
+            UIImage(named: "AlexRottlaender(1)")
+        ]
+    }()
+    
+    private let labels : [String] =
+    {
+        return [
+            "This is a juice made from bugs",
+            "This is shrek",
+            "This guy plays the guitar",
+            "This is a mouse",
+            "A haiku about swift",
+            "A haiku about MTM",
+            "A haiku about Java",
+            "An Octocat"
+        ]
+    }()
 
     public override func viewDidLoad() -> Void
     {
