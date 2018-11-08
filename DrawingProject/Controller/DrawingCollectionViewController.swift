@@ -83,6 +83,9 @@ public class DrawingCollectionViewController: UICollectionViewController
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
+    
+    
+    
 
 
     public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
@@ -90,14 +93,17 @@ public class DrawingCollectionViewController: UICollectionViewController
         // #warning Incomplete implementation, return the number of items
         return creativeCS.count
     }
+    
 
     public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
     
-        // Configure the cell
+        artCell.backgroundColor = .brown
+        artCell.artImage.image = creativeCS[indexPath.row]
+        artCell.artLabel.text = labels[indexPath.row]
     
-        return cell
+        return artCell
     }
 
     // MARK: UICollectionViewDelegate
