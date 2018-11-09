@@ -28,7 +28,8 @@ public class DrawingCollectionViewController: UICollectionViewController
             UIImage(named: "AlexRottlaenderSwiftHaiku"),
             UIImage(named: "AlexRottlaenderMainframeHaiku"),
             UIImage(named: "AlexRottlaenderJavaHaiku"),
-            UIImage(named: "AlexRottlaender(1)")
+            UIImage(named: "AlexRottlaender(1)"),
+            UIImage(named: "AI Language Learning")
         ]
     }()
     
@@ -42,7 +43,8 @@ public class DrawingCollectionViewController: UICollectionViewController
             "A haiku about swift",
             "A haiku about MTM",
             "A haiku about Java",
-            "An Octocat"
+            "An Octocat",
+            "A Robot"
         ]
     }()
 
